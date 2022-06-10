@@ -1,0 +1,58 @@
+
+
+<app-header></app-header>
+
+<table style="border: 1px solid aqua;">
+    <thead style="border: 1px solid aqua;">
+        <tr style="border: 1px solid aqua;">
+            <td style="border: 1px solid aqua;">UserId</td>
+            <td style="border: 1px solid aqua;">Id</td>
+            <td style="border: 1px solid aqua;">Title</td>
+            <td style="border: 1px solid aqua;">Completed</td>
+        </tr>
+    </thead>
+    <tbody style="border: 1px solid aqua;">
+        <tr *ngFor="let item of data" style="border: 1px solid aqua;">
+            <td style="border: 1px solid aqua;">{{item.userId}}</td>
+            <td style="border: 1px solid aqua;">{{item.id}}</td>
+            <td style="border: 1px solid aqua;">{{item.title}}</td>
+            <td style="border: 1px solid aqua;">{{item.completed}}</td>
+        </tr>
+    </tbody>
+</table>
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 1 for loop -->
+<!-- <table style="border:1px solid aqua;">
+    <thead style="border:1px solid aqua;">
+        <tr style="border:1px solid aqua;">
+            <td style="border:1px solid aqua;">Name</td>
+            <td style="border:1px solid aqua;">Gander</td>
+        </tr>
+    </thead>
+    <tbody style="border:1px solid aqua;">
+        <tr *ngFor="let item of arr" style="border:1px solid aqua;">
+            <td style="border:1px solid aqua;">{{item.name}}</td>
+            <td  style="border:1px solid aqua;">{{item.gender}}</td>
+        </tr>
+    </tbody>
+</table> -->
